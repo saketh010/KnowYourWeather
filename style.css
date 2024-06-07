@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  background: #131214;
+}
+
+h1 {
+  background: #1D1C1F;
+  font-size: 2rem;
+  text-align: center;
+  padding: 18px 0;
+  color: #fff;
+}
+
+h2 {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  gap: 35px;
+  padding: 20px;  
+}
+
+.weather-input {
+  width: 550px;
+}
+
+.weather-input input {
+  height: 46px;
+  width: 100%;
+  outline: none;
+  font-size: 1.07rem;
+  padding: 0 17px;
+  margin: 10px 0 20px 0;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.weather-input input:focus {
+  padding: 0 16px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.weather-input .separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #BBBBBB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-input .separator::before {
+  content: "or";
+  color: #000000;
+  font-size: 1.2rem;
+  padding: 0 15px;
+  margin-top: -4px;
+  background: #ffffff;
+}
+
+.weather-input button {
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: #fff;
+  background: #1D1C1F;
+  transition: 0.2s ease;
+}
+
+.weather-input .search-btn:hover {
+  background: #2f2f2f;
+}
+
+.weather-input .location-btn {
+  background: #1D1C1F;
+}
+
+.weather-input .location-btn:hover {
+  background: #2f2f2f;
+}
+
+.weather-data {
+  width: 100%;
+  margin-block-start: 8px;
+  height: 1fr;
+}
+
+.weather-data .current-weather {
+  color: #fff;
+  background: #1D1C1F;
+  border-radius: 20px;
+  padding: 20px 70px 20px 20px;
+  display: flex;
+  height: 40%;
+  justify-content: space-between;
+}
+
+.current-weather h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.weather-data h6 {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.current-weather .icon {
+  text-align: center;
+}
+
+.current-weather .icon img {
+  max-width: 120px;
+  margin-top: -15px;
+}
+
+.current-weather .icon h6 {
+  margin-top: -10px;
+  text-transform: capitalize;
+}
+
+.days-forecast h2 {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+.days-forecast .weather-cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.weather-cards .card {
+  color: #fff;
+  padding: 18px 16px;
+  list-style: none;
+  flex: 0 0 auto;
+  background: #1D1C1F;
+  border-radius: 5px;
+}
+
+.weather-cards .card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.weather-cards .card img {
+  max-width: 70px;
+  margin: 5px 0 -12px 0;
+}
+
+/* Scrollbar Styles */
+
+.weather-cards::-webkit-scrollbar {
+  height: 12px;
+}
+
+.weather-cards::-webkit-scrollbar-track {
+  background: #1D1C1F;
+  border-radius: 10px;
+}
+
+.weather-cards::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  border: 3px solid #1D1C1F;
+}
+
+.weather-cards::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 1400px) {
+  .weather-data .current-weather {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .weather-cards .card {
+    width: calc(100% / 3 - 15px);
+  }
+}
+
+@media (max-width: 950px) {
+  .weather-input {
+    width: 450px;
+  }
+  .weather-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 1.45rem;
+    padding: 16px 0;
+  }
+  .container {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .weather-input {
+    width: 100%;
+  }
+  .weather-data h2 {
+    font-size: 1.35rem;
+  }
+}
+
+.aqi-card {
+  color: #fff;
+  background: #1D1C1F;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.aqi-card h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+.aqiheading{
+  color: rgb(255, 255, 255);
+  font-family: "Varela Round", sans-serif;
+  margin: 20px 0px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+}
+.aqi-card p {
+  font-size: 1.25rem;
+  word-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 750px) {
+  .aqi-card {
+    padding: 15px;
+  }
+
+  .aqi-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .aqi-card p {
+    font-size: 0.9rem;
+  }
+}
+

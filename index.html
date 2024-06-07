@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Know Your Weather</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <script type='text/javascript' src='./config.js'></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <header class="nameHeader">
+    <h1>Know Your Weather</h1>
+  </header>
+  <div class="container">
+    <div class="weather-input">
+      <input class="city-input" type="text" placeholder="Search Your City">
+      <button class="search-btn">Search</button>
+      <div class="separator"></div>
+      <button class="location-btn">Current Location</button>
+      <br><br>
+      <p class="aqiheading">Air Quality Index</p>
+      <div class="aqi-card">
+        <p id="aqi-value">AQI: </p>
+        <p id="aqi-advisory">Advisory: </p>
+    </div>
+    </div>
+    <div class="weather-data">
+      <div class="current-weather">
+        <div class="details">
+          <h2>Bengaluru</h2>
+          <h6>Temperature: 25°C</h6>
+          <h6>Wind: 20 M/S</h6>
+          <h6>Humidity: 16 %</h6>
+        </div>
+      </div>
+      <br>
+      <div class="days-forecast">
+        <h2>5-Day Forecast</h2>
+        <ul id="weather-cards" class="weather-cards">
+          <li class="card">
+            <h3>Sun</h3>
+            <h6>Temp: 25 C</h6>
+            <h6>Wind: 20 M/S</h6>
+            <h6>Humidity: 50 %</h6>
+          </li>
+          <li class="card">
+            <h3>Mon</h3>
+            <h6>Temp: 27 C</h6>
+            <h6>Wind: 15 M/S</h6>
+            <h6>Humidity: 30 %</h6>
+          </li>
+          <li class="card">
+            <h3>Tue</h3>
+            <h6>Temp: 23 C</h6>
+            <h6>Wind: 17 M/S</h6>
+            <h6>Humidity: 23 %</h6>
+          </li>
+          <li class="card">
+            <h3>Wed</h3>
+            <h6>Temp: 30 C</h6>
+            <h6>Wind: 10 M/S</h6>
+            <h6>Humidity: 12 %</h6>
+          </li>
+          <li class="card">
+            <h3>Thu</h3>
+            <h6>Temp: 27 C</h6>
+            <h6>Wind: 12 M/S</h6>
+            <h6>Humidity: 18 %</h6>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
