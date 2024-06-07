@@ -4,10 +4,7 @@ const locationButton = document.querySelector(".location-btn");
 const currentWeatherDiv = document.querySelector(".current-weather");
 const weatherCardsDiv = document.querySelector(".weather-cards");
 
-var mykey = config.MY_KEY;
-var secretkey = config.SECRET_KEY;
-
-const API_KEY = mykey; // API key for OpenWeatherMap API
+const API_KEY = "42a2f714587baefc0586f8651748f3b8"; // API key for OpenWeatherMap API
 
 const getDayOfWeek = (dateString) => {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
