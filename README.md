@@ -30,8 +30,7 @@ Check out the live demo of **Know Your Weather** [here](https://saketh010.github
 ## Screenshots
 
 ### Home Page
-![Home Page](![image](https://github.com/saketh010/KnowYourWeather/assets/141061658/2703dc9c-5dba-4f39-b2a5-45759a5cbb31)
-)
+![Weather Screenshot](./assets/WeatherDetails.png)
 
 ## Installation
 
